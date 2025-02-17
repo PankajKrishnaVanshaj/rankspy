@@ -32,39 +32,59 @@ const KeywordAnalysis = () => {
       </p>
 
       {/* Keyword Input Section */}
-      <div className="mb-8 p-6 bg-white rounded-2xl shadow-lg">
-        <h2 className="text-2xl font-semibold mb-4">Enter Keywords</h2>
-        <input
-          type="text"
-          placeholder="Enter keywords (comma-separated)..."
-          className="w-full p-3 border rounded-lg outline-none focus:ring-2 focus:ring-blue-400"
-        />
-        <button className="mt-4 px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition">
-          Analyze
-        </button>
-      </div>
+      <section className="mb-12 p-8 bg-white rounded-xl shadow-lg">
+        <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+          Enter Keywords
+        </h2>
+        <div className="space-y-4 sm:flex sm:space-x-6 sm:space-y-0 sm:items-center">
+          <input
+            type="text"
+            placeholder="Enter keywords (comma-separated)..."
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary transition"
+          />
+          <button className="w-full sm:w-auto px-6 py-3 bg-text-gradient border border-primary text-white rounded-lg font-semibold transition-all hover:scale-105 duration-300">
+            Analyze
+          </button>
+        </div>
+      </section>
 
       {/* Analysis Results Section */}
-      <div className="mb-8 p-6 bg-white rounded-2xl shadow-lg">
-        <h2 className="text-2xl font-semibold mb-4">Analysis Results</h2>
-        <ul className="space-y-4">
-          <li className="p-4 border rounded-lg bg-gray-100">
-            <span className="font-bold">Keyword:</span> "SEO Tips"
-            <br />
-            <span className="font-bold">Search Volume:</span> 12,000
-            <br />
-            <span className="font-bold">Competition:</span> Medium
-          </li>
-          <li className="p-4 border rounded-lg bg-gray-100">
-            <span className="font-bold">Keyword:</span> "Blog Optimization"
-            <br />
-            <span className="font-bold">Search Volume:</span> 8,500
-            <br />
-            <span className="font-bold">Competition:</span> Low
-          </li>
+      <section className="bg-white rounded-xl shadow-xl p-8 mb-12 hover:scale-105 transition-all duration-300">
+        <h2 className="text-2xl font-semibold text-gray-800 mb-6">
+          Analysis Results
+        </h2>
+        <div className="space-y-6">
+          <div className="p-6 border border-gray-300 rounded-xl shadow-sm bg-gray-50 hover:shadow-lg transition-all">
+            <h3 className="font-bold text-xl text-gray-800">
+              Keyword: "SEO Tips"
+            </h3>
+            <p className="text-gray-600">
+              <strong>Search Volume:</strong> 12,000 |{" "}
+              <strong>Competition:</strong> Medium | <strong>Trend:</strong>{" "}
+              Stable | <strong>CPC:</strong> $2.50 |{" "}
+              <strong>SEO Difficulty:</strong> High | <strong>CTR:</strong> 3.0%
+              | <strong>Organic Search Position:</strong> 5 |{" "}
+              <strong>Paid Search Position:</strong> 2 |{" "}
+              <strong>Relevance to Content:</strong> High
+            </p>
+          </div>
+          <div className="p-6 border border-gray-300 rounded-xl shadow-sm bg-gray-50 hover:shadow-lg transition-all">
+            <h3 className="font-bold text-xl text-gray-800">
+              Keyword: "Blog Optimization"
+            </h3>
+            <p className="text-gray-600">
+              <strong>Search Volume:</strong> 8,500 |{" "}
+              <strong>Competition:</strong> Low | <strong>Trend:</strong>{" "}
+              Increasing | <strong>CPC:</strong> $1.25 |{" "}
+              <strong>SEO Difficulty:</strong> Medium | <strong>CTR:</strong>{" "}
+              2.5% | <strong>Organic Search Position:</strong> 12 |{" "}
+              <strong>Paid Search Position:</strong> 4 |{" "}
+              <strong>Relevance to Content:</strong> Medium
+            </p>
+          </div>
           {/* Add more results as needed */}
-        </ul>
-      </div>
+        </div>
+      </section>
 
       {/* SEO Tips Section */}
       <div className="p-6 bg-white rounded-2xl shadow-lg">
